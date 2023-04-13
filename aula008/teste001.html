@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: greenyellow;
+        }
+
+        div.resultado{
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+            margin: 40px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" onkeyup="soman2">
+    <input type="number" onkeyup="soman1()">
+    <div class="resultado">Resultado aqui</div>
+
+    <script>
+        let n1 = 0
+        let n2 = 0
+        var b = document.querySelector('div.resultado')
+        b.addEventListener('click', resultado)
+
+        function soman1(){
+            a.innerHTML = 'oi'
+        }
+        function resultado(n1,n2){
+            var a = document.querySelector('div.resultado')
+            a.innerHTML = "seu resultado é: "
+        }
+    </script>
+</body>
+</html>
