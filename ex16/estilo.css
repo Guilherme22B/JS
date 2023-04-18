@@ -1,5 +1,5 @@
 body{
-    background: rgb(54, 54, 54);
+    background-color: rgb(99, 163, 184);
     font: normal 15pt arial;
 
 }
@@ -19,8 +19,7 @@ img{
     align-items: center;
 }
 div{
-    margin: 15px;
-    text-align: center;
+    margin-top: 25px;
 }
 section{
     background: white;
@@ -30,6 +29,13 @@ section{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 
+}
+
+main{
+    width: 250px;
+}
+input , label{
+    margin-bottom: 25px;
 }
 footer{
     color: white;

@@ -1,20 +1,18 @@
-function cargea(){
-var msg = document.querySelector('div#msg')
-var img = document.querySelector('div img')
-var bgc = document.querySelector('body')
-var data = new Date()
-var hora = data.getHours()
-msg.innerHTML = `Agora são ${hora} horas`
+function myfunction(){
+var i = Number(document.querySelector("input#inicio").value)
+var f = Number(document.querySelector("input#fim").value)
+var p = Number(document.querySelector("input#passo").value)
+var res = document.querySelector("div#msg")
 
-if(hora <= 12 ){
-    img.src = 'imagens/manha.jpg'
-    bgc.style.background = 'rgb(196, 194, 194)'
+if(0 == i || 0 == f || 0 == p){
+    alert("falso")
 }
-else if (hora > 12 && hora <= 18) {
-    img.src = 'imagens/tarde.jpg'
-    bgc.style.background = '#e2cd9f'
-} else {
-    img.src = 'imagens/noite.jpg'
-    bgc.style.background = 'rgb(54, 54, 54)'
+else if(null == i){
+    alert()
+}
+else{
+for(i = i; i <= f; i = i + p){ 
+    res.innerHTML = (i)
+}
 }
 }

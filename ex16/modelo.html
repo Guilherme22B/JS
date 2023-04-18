@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
-    <title>hora do dia</title>
+    <title>contador de passos</title>
 </head>
-<body onload="cargea()">
+<body>
     <header>
-        <h1>Hora Do Dia</h1>
+        <h1>vamos contar</h1>
     </header>
     <section>
+        <main>
+            <label for=""> inicio:  </label> <input id="inicio" type="number">
+            <label for=""> Fim: </label> <input id="fim" type="number">
+            <label for=""> Passo: </label> <input id="passo" type="number">
+
+            <button onclick="myfunction()"><strong>contar</strong></button>
+
+        </main>
         <div id="msg">
-            aqui vai aparecer a hora
-        </div>
-        <div>
-            <img id="imagem" src="imagens/manha.jpg" alt="">
+            preparando a contagem...
         </div>
     </section>
     <footer>
