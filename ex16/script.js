@@ -12,8 +12,7 @@ else if(null == i){
 }
 else{
 for(i = i; i <= f; i = i + p){ 
-    res.innerHTML = ("contagem: ")
-    console.log(i)
+    res.innerText = (i)
 }
 }
 }
