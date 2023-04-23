@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <script src="script.js"></script>
-    <title>hora do dia</title>
+    <title>tabuada</title>
 </head>
 <body>
+    <h1>tabuada</h1>
     <section>
-
         <main>
             <label for="">numero: </label>
             <input type="number">
-            <button onclick="res()">Gerar tabuada</button>
-            <div id="msg">
-            </div>
-        </main>
+            <button onclick="tabuada()">Gerar tabuada</button>
 
+            <div id="select">
+            <select name="tabuada" id="seltabuada" size="10">
+                <option value="">Digite um numero acima</option>
+            </select>
+            </div>
+
+        </main>
     </section>
     <footer>
         <p>&copy; CursoemVideo</p>

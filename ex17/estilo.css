@@ -10,6 +10,8 @@ header{
 }
 h1{
     text-shadow: 3px 5px 10px rgba(0, 0, 0, 0.397);
+    color: white;
+    text-align: center;
 }
 img{
     width: 300px;
@@ -20,7 +22,6 @@ img{
 }
 div{
     margin: 15px;
-    text-align: center;
 }
 section{
     background: white;
