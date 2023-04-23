@@ -37,3 +37,8 @@ footer{
     font-style: italic;
 
 }
+
+div#msg{
+    padding: 10px;
+    width: fit-content;
+}
