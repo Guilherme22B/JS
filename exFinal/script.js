@@ -7,6 +7,17 @@ function adicionar(){
     console.log(memoria)
 
 
+        for(c = 0; c <= 100; c++){
+            if(num !== memoria[c]){
+            }
+            else{
+                alert("[ERRO]")
+                var num = null
+            }
+        }
+ 
+
+
     if(num > 100 || num <= 0){
         alert("[ERRO]digite um numero entre 1 e 100")
     }
