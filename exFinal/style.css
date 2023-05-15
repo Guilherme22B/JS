@@ -33,8 +33,7 @@ option{
     font-weight: bold;
 }
 div#res{
-    width: 134.4px;
-    border: 1px solid red;
+    width: 200px;
     margin-left: 20px;
 }
 footer{

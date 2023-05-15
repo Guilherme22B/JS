@@ -5,7 +5,6 @@ var media = 0
 
 
 function adicionar(){
-
     var num = Number(document.querySelector("input").value)
     var res = document.querySelector("div#res")
     var selec = document.querySelector("select")
@@ -51,10 +50,11 @@ function fim(){
         alert("[Erro] digite um valor")
     }
     else{
+
         res.innerHTML = ``
-        res.innerHTML += `o maior numero é: ${maiorv}`
-        res.innerHTML += `o menor numero é: ${menorv}`
-        res.innerHTML += `a media é: ${media / memoria.length}`
+        res.innerHTML += `o maior numero é: ${maiorv} <br>`
+        res.innerHTML += `o menor numero é: ${menorv} <br>`
+        res.innerHTML += `a media é: ${media / (memoria.length)} <br>`
     }
 
 }
