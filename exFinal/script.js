@@ -1,4 +1,9 @@
 var memoria = []
+var maiorv = 0
+var menorv = 101
+var media = 0
+
+
 function adicionar(){
 
     var num = Number(document.querySelector("input").value)
@@ -11,7 +16,7 @@ function adicionar(){
             if(num !== memoria[c]){
             }
             else{
-                alert("[ERRO]")
+                alert("[ERRO] Numero repitido")
                 var num = null
             }
         }
@@ -22,6 +27,17 @@ function adicionar(){
         alert("[ERRO]digite um numero entre 1 e 100")
     }
     else{
+
+        if(num > maiorv){
+            maiorv = num
+        }
+
+        if(num < menorv){
+            menorv = num
+        }
+
+        media = media + num
+
         memoria.push(num)
         var opt = document.createElement('option')
         opt.text = `valor ${num} adicionado`
@@ -31,8 +47,16 @@ function adicionar(){
 
 
 function fim(){
-    res.innerHTML += `o menor numero é`
-    alert("olá")
+    if(maiorv == 0){
+        alert("[Erro] digite um valor")
+    }
+    else{
+        res.innerHTML = ``
+        res.innerHTML += `o maior numero é: ${maiorv}`
+        res.innerHTML += `o menor numero é: ${menorv}`
+        res.innerHTML += `a media é: ${media / memoria.length}`
+    }
+
 }
 
 
