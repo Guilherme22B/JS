@@ -1,5 +1,4 @@
 export class Cauculadora {
-
     calc(i,n) {
         soma = (i,n) => i + n;
         multiplicaçao = (i,n) => i *n;
